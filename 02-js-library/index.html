@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="left-main-container">
+      <h1>Add Book</h1>
+      <form class="add-book">
+        <input type="text" placeholder="Title" />
+        <input type="text" placeholder="Author" />
+        <input type="number" placeholder="Number of pages" />
+        <textarea name="book-desc" id="" rows="8" cols="20"></textarea>
+        <div>
+          <input type="radio" id="have-read" name="have-read" value="true" />
+          <label for="contactChoice1">Have read</label>
+
+          <input type="radio" id="have-read" name="have-read" value="false" />
+          <label for="contactChoice2">Haven't read</label>
+        </div>
+      </form>
+    </div>
+    <div class="right-main-container">
+      <h1>Books</h1>
+      <div class="cards">
+        <div class="card">
+          <div class="card-title"><h1>Title.</h1></div>
+          <div class="card-short-desc">
+            <p>
+              Change the button text accordingly to the status of card. IF card
+              is false then text is true or vice vera. accordingly
+            </p>
+          </div>
+          <div class="card-pages"><p>100</p></div>
+          <div class="card-have-read"><p>No</p></div>
+          <div class="card-action-menu">
+            <button class="card-delete">Delete</button>
+            <button class="card-delete">Have read/ Havenot read</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
