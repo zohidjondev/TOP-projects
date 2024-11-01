@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "Google Sans";
+  src: url("Google-Sans-Font/GoogleSans-Bold.ttf");
+}
+
+:root {
+  --main-color: #000b58;
+  --main-color-2: #01083c;
+  --neutral-color: #fbfbfb;
+  --action-color: #006a67;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Google Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-color);
+  min-height: 100vh;
+}
+
+h1 {
+  color: var(--neutral-color);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.start-menu,
+.gameBoard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--main-color-2);
+  padding: 20px;
+  border-radius: 1rem;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
+.start-menu input {
+  margin: 10px 0;
+  padding: 10px;
+  width: 80%;
+  border: none;
+  border-radius: 8px;
+  background: var(--neutral-color);
+  color: var(--main-color-2);
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  background: var(--action-color);
+  color: var(--neutral-color);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.start-menu button:hover {
+  background: darken(var(--action-color), 10%);
+}
+
+.gameBoard {
+  display: none; /* Hidden until start button is clicked */
+  height: 100vh;
+  width: 35%;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 332px;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  border: 2px solid var(--neutral-color);
+  border-radius: 1rem;
+  font-size: 2rem;
+  color: var(--neutral-color);
+}
+
+.stats {
+  color: #fbfbfb;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+  background-color: var(--main-color-2);
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.stats h3,
+.stats h1 {
+  color: var(--neutral-color);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.stats .player1name,
+.stats .player2name {
+  font-weight: bold;
+}
+
+.stats .player1points,
+.stats .player2points {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--action-color);
+}
