@@ -1,6 +1,12 @@
+/* Google Sans font */
+@font-face {
+  font-family: "Google Sans";
+  src: url("../Google-Sans-Font/GoogleSans-Bold.ttf");
+}
+
 /* General */
 * {
-  font-family: "Ubuntu";
+  font-family: "Google Sans";
 }
 
 :root {
@@ -40,7 +46,7 @@ a {
   color: var(--color-neutral);
   font-weight: 700;
   transition: all ease 500ms;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
 
 a:hover {

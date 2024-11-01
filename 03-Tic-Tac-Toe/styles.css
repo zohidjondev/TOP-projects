@@ -1,6 +1,7 @@
+/* Google Sans font */
 @font-face {
   font-family: "Google Sans";
-  src: url("Google-Sans-Font/GoogleSans-Bold.ttf");
+  src: url("../Google-Sans-Font/GoogleSans-Bold.ttf");
 }
 
 :root {
